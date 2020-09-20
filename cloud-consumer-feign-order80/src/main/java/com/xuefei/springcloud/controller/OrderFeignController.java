@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.annotation.Resource;
 
 /**
- * @description:
  * @author: xuefei
  * @date: 2020/09/15 23:22
  */
@@ -21,7 +20,7 @@ public class OrderFeignController {
     PaymentFeignService paymentFeignService;
 
     @GetMapping(value = "/consumer/payment/get/{id}")
-    public CommonResult<Payment> getPaymentById(@PathVariable("id") Long id){
+    public CommonResult<Payment> getPaymentById(@PathVariable("id") Long id) {
         return paymentFeignService.getPaymentById(id);
     }
 

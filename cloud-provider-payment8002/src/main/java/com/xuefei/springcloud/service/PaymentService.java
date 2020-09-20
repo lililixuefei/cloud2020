@@ -4,7 +4,6 @@ import com.xuefei.springcloud.entities.Payment;
 import org.apache.ibatis.annotations.Param;
 
 /**
- * @description:
  * @author: xuefei
  * @date: 2020/09/03 00:25
  */
